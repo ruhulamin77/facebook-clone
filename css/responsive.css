@@ -1,4 +1,4 @@
-@media screen and (max-width: 1260px) {
+@media screen and (max-width: 1200px) {
   .search {
     width: 40px;
     height: 40px;
@@ -13,9 +13,6 @@
   .profile_area .profile {
     display: none;
   }
-}
-
-@media screen and (max-width: 992px) {
   .menu_area ul li:last-child {
     display: block;
   }
@@ -28,10 +25,25 @@
   .profile_area ul li:nth-child(3) {
     display: flex;
   }
+
+  /* main */
+  .left_side {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
   .menu_area {
     display: none;
   }
   .menu_toggler span {
     display: block;
   }
+  /* main */
+  .right_side {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* main */
 }
