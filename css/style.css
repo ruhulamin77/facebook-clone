@@ -13,4 +13,239 @@ common css
 body {
   scroll-behavior: smooth;
   font-family: "Segoe UI Historic", "Segoe UI", Helvetica, Arial, sans-serif;
+  background-color: #18191a;
+}
+/* ============
+header style
+=============*/
+header {
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #242526;
+  /* 3A3B3C */
+  padding: 0 20px;
+  border-bottom: 1px solid #3b3e40;
+  width: 100%;
+}
+.logo_area {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  width: 40px;
+  height: 40px;
+}
+.logo a {
+  text-decoration: none;
+  display: block;
+}
+.logo img {
+  width: 100%;
+}
+.search {
+  display: flex;
+  background-color: #3a3b3c;
+  height: 40px;
+  width: 240px;
+  border-radius: 20px;
+  align-items: center;
+  padding: 0 15px;
+  margin-left: 10px;
+}
+.search span {
+  width: 30px;
+  color: #b0b3b8;
+}
+.search input {
+  border: none;
+  outline: none;
+  background-color: unset;
+  flex-grow: 1;
+  font-size: 15px;
+  color: #e4e6eb;
+}
+.search input::placeholder {
+  color: #b0b3b8;
+  font-size: 15px;
+}
+.menu_toggler span {
+  display: none;
+  width: 40px;
+  height: 40px;
+  color: #b0b3b8;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  margin-left: 10px;
+  border-radius: 5px;
+  position: relative;
+  display: none;
+}
+.menu_toggler span:hover {
+  background-color: #4f5152;
+}
+.menu_toggler span::after {
+  content: attr(data-more);
+  background-color: #b0b3b8;
+  color: #000000;
+  padding: 7px 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -42px;
+  position: absolute;
+  border-radius: 10px;
+  display: none;
+}
+.menu_toggler span:hover::after {
+  /* display: block; */
+}
+.menu_area nav ul {
+  display: flex;
+  align-items: center;
+}
+.menu_area nav ul li {
+  list-style: none;
+  position: relative;
+  margin-right: 15px;
+}
+.menu_area ul li:last-child {
+  display: none;
+}
+.menu_area nav ul li:last-child {
+  margin-right: 0px;
+}
+.menu_area nav ul li a {
+  text-decoration: none;
+  /* background-color: #4f5050; */
+  padding: 10px 40px;
+  display: block;
+  text-decoration: none;
+  color: #b0b3b8;
+  border-radius: 10px;
+  transition: 0.2s;
+  position: relative;
+}
+.menu_area nav ul li a span {
+  font-size: 25px;
+}
+.menu_area nav ul li a:hover {
+  background-color: #3a3b3c;
+}
+.menu_area ul li a::after {
+  content: attr(data-tag);
+  background-color: #b0b3b8;
+  color: #000000;
+  padding: 7px 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -42px;
+  position: absolute;
+  border-radius: 10px;
+  display: none;
+}
+.menu_area nav ul li:first-child::after {
+  content: "";
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -10;
+  background-color: #2374e1;
+}
+.menu_area nav ul li:first-child a span {
+  color: #2374e1;
+}
+
+.menu_area nav ul li a:hover::after {
+  display: block;
+}
+.menu_area nav ul li:first-child a:hover {
+  background-color: unset;
+}
+
+.profile_area ul {
+  display: flex;
+  align-items: center;
+}
+.profile_area ul li {
+  color: #ffffff;
+  background-color: #3a3b3c;
+  padding: 10px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  list-style: none;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  transition: 0.2s;
+}
+.profile_area ul li:nth-child(3) {
+  display: none;
+}
+
+.profile_area ul li:hover {
+  background-color: #4f5152;
+}
+.profile_area ul li:last-child {
+  margin-right: 0px;
+}
+
+.profile_area ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 5px 10px 5px 5px;
+  border-radius: 20px;
+  transition: 0.2s;
+}
+
+.profile_area ul li:first-child a:hover {
+  background-color: #3a3b3c;
+}
+.profile a {
+  display: flex;
+  align-items: center;
+}
+.profile a img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  margin-right: 7px;
+}
+.profile_area ul li:first-child {
+  background-color: unset;
+  width: unset;
+  height: unset;
+  padding: unset;
+}
+
+.profile_area ul li::after {
+  content: attr(data-tag);
+  background-color: #b0b3b8;
+  color: #000000;
+  padding: 7px 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -46px;
+  position: absolute;
+  border-radius: 10px;
+  display: none;
+}
+
+.profile_area ul li:last-child::after {
+  transform: translateX(-70%);
+}
+.profile_area ul li:hover::after {
+  display: block;
+}
+.profile_area ul li:first-child::after {
+  display: none;
 }
