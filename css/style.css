@@ -372,7 +372,7 @@ main {
 /* scrollbar */
 /* width */
 ::-webkit-scrollbar {
-  width: 7px;
+  width: 8px;
 }
 
 /* Track */
@@ -422,7 +422,7 @@ rigth aside bar
 
 .sponsored_title {
   color: #b0b3b8;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   font-size: 17px;
   font-weight: 600;
 }
@@ -467,3 +467,89 @@ rigth aside bar
 .birthday_content:hover {
   background-color: #3a3b3c;
 }
+
+.contact_section {
+}
+.contact_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #b0b3b8;
+  font-size: 17px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.search_contact {
+  display: flex;
+  align-items: center;
+}
+.search_contact span {
+  height: 40px;
+  width: 40px;
+  margin-left: 15px;
+  border-radius: 50%;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.search_contact span:hover {
+  background-color: #3a3b3c;
+}
+
+/* ============
+contact section
+=============== */
+.chat_list img {
+  border-radius: 50%;
+}
+.conversations_title {
+  color: #b0b3b8;
+  font-size: 17px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.group_list img {
+  border-radius: 50%;
+  position: relative;
+}
+
+.chat_list img::after {
+  /* content: "";
+  width: 4px;
+  height: 4px;
+  background-color: green;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  bottom: 0; */
+}
+/* .chat_list li {
+  position: relative;
+}
+.chat_list li::after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  background-color: green;
+  border: 2px solid black;
+  border-radius: 50%;
+  position: absolute;
+  left: 30;
+  bottom: 10;
+} */
+/* .chat_list li a {
+  position: relative;
+}
+.chat_list li a::after {
+  content: "";
+  width: 4px;
+  height: 4px;
+  background-color: green;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+} */
