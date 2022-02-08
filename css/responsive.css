@@ -46,4 +46,7 @@
 }
 @media screen and (max-width: 768px) {
   /* main */
+  .story_wrapper:last-child {
+    display: none;
+  }
 }
