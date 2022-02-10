@@ -507,6 +507,9 @@ main {
 .left_side:hover::-webkit-scrollbar-thumb {
   display: block;
 }
+.middle_section:hover::-webkit-scrollbar-thumb {
+  display: block;
+}
 /* scrollbar */
 
 .left_footer {
